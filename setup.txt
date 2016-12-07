@@ -28,3 +28,7 @@
 	Sublime Text -
 	VirtualBox -
 
+-- Git Config --
+
+	git config --global user.email "dev@twbarber.com"
+	git config --global user.name "Tyler Barber"
