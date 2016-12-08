@@ -28,7 +28,6 @@
 	-- apt-get update --
 
 	-- apt-get install --
-
 		# THEME
 
 			numix-gtk-theme 
@@ -44,3 +43,4 @@
 
 	git config --global user.email "dev@twbarber.com"
 	git config --global user.name "Tyler Barber"
+  	git config --global push.default simple
