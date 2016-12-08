@@ -19,7 +19,7 @@ dotfiles() {
 }
 
 echo ""
-echo "==============="
-echo " PLEASE REBOOT "
-echo "==============="
+echo "================="
+echo "= PLEASE REBOOT ="
+echo "================="
 echo ""
