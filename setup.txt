@@ -1,23 +1,17 @@
--- Numix Theme and Icons --
-
-	sudo add-apt-repository ppa:numix/ppa
-	sudo apt-get update
-	sudo apt-get install numix-gtk-theme numix-icon-theme-circle
-
 -- Docker --
 
-	sudo apt-get install apt-transport-https ca-certificates
-	sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-	echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee /etc/apt/sources.list.d/docker.list
-	sudo apt-get update
-	sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
-	sudo apt-get install docker-engine
-	sudo service docker start
-	sudo docker run hello-world
+	apt-get install apt-transport-https ca-certificates
+	apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+	echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | tee /etc/apt/sources.list.d/docker.list
+	apt-get update
+	apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
+	apt-get install docker-engine
+	service docker start
+	docker run hello-world
 
 	-- Docker as non-root --
 		
-		sudo usermod -aG docker $USER
+		usermod -aG docker $USER
 		< LOGOUT >
 		docker run hello-world
 
@@ -25,8 +19,26 @@
 
 	Android Studio - 
 	JetBrains Toolbox - 
-	Sublime Text -
-	VirtualBox -
+
+	-- add-apt-repository --
+
+		ppa:numix/ppa
+		ppa:webupd8team/sublime-text-3
+
+	-- apt-get update --
+
+	-- apt-get install --
+
+		# THEME
+
+			numix-gtk-theme 
+			numix-icon-theme-circle
+
+		# APPLICATIONS 	
+
+			sublime-text-installer
+			virtualbox
+			python3-pip
 
 -- Git Config --
 
